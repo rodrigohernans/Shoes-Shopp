@@ -1,0 +1,12 @@
+
+.container {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #f88643, #e03570 )  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

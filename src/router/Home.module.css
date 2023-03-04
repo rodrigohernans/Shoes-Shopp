@@ -1,0 +1,15 @@
+.imagen {
+    object-fit: scale-down;
+    width: 80%;
+    height: 400px;
+    
+}
+
+.containerImg {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    height: 30vh;
+}

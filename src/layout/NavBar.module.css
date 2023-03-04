@@ -1,0 +1,74 @@
+.container {
+  min-height: 10vh;
+  background: linear-gradient(to right, #f88643, #eb5c59, #e03570);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nav {
+	display: flex;
+	margin-left: 1em;
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+.info {
+	width: 100%;
+	margin-left: 1em;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: 0.5em;
+  background: linear-gradient(to right, #f88643, #e03570 ) ;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 1px 1px 1px #ffffff, -3px -3px 8px #ffffff;
+}
+
+.menuButton:hover {
+  border: 1px solid white;
+}
+
+.menuButton:active {
+  color: #666;
+/*   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; */
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 28px;
+  height: 4px;
+  background: white;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked + .menuButton .top {
+  transform: translateY(290%) rotate(45deg);
+  width: 40px;
+}
+
+input[type="checkbox"]:checked + .menuButton .bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type="checkbox"]:checked + .menuButton .mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}
