@@ -3,16 +3,25 @@ import "react-multi-carousel/lib/styles.css";
 import React, { useEffect, useState } from "react";
 
 import Carrusel from "../componentes/Carousel";
+import Info from "../componentes/Info";
 import Nav from "../layout/NavBar";
+import ZapatoDeCaballero from "../componentes/ZapatosDeCaballero";
+import ZapatosDeMujer from "../componentes/ZapatosDeDama";
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Nav />
-			<div>
-				{/* <Carrusel /> */}
-			</div>
+      <h2>Explora los mejores zapatos</h2>
+      <div>
+        <Carrusel />
+      </div>
+      <Info />
+      <h2 className={styles.mujer}>Zapatos Mujer</h2>
+      <ZapatosDeMujer />
+      <h2 style={{ textAlign: "start", marginLeft: 20 }}>Zapatos Caballero</h2>
+      <ZapatoDeCaballero />
     </div>
   );
 };

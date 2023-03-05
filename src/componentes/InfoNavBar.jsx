@@ -1,6 +1,6 @@
 import styles from "./InfoNavBar.module.css";
 
-const infoDespliegue = ["Store", "Man", "Women"];
+const infoDespliegue = ["Inicio", "Preguntas Frecuentes" , "Zapatos Dama" , "Zapatos Caballero", "Contacto"];
 
 export default function InfoNavBar() {
   return (

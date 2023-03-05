@@ -1,22 +1,21 @@
 .container {
   min-height: 10vh;
-  background: linear-gradient(to right, #f88643, #eb5c59, #e03570);
+  background: red;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
 }
 
 .nav {
 	display: flex;
-	margin-left: 1em;
-	margin-top: 0.5em;
-	width: 100%;
-}
-
-.info {
-	width: 100%;
-	margin-left: 1em;
+	width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2em;
 }
 
 .menuButton {
@@ -32,7 +31,7 @@
   background: linear-gradient(to right, #f88643, #e03570 ) ;
   border: 1px solid #e8e8e8;
   transition: all 0.3s;
-  box-shadow: 1px 1px 1px #ffffff, -3px -3px 8px #ffffff;
+  box-shadow: 1px 1px 1px #ffffff, -3px -3px -4px #ffffff;
 }
 
 .menuButton:hover {
@@ -44,7 +43,6 @@
 /*   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; */
 }
 input[type="checkbox"] {
-  -webkit-appearance: none;
   display: none;
   visibility: hidden;
 }
@@ -72,3 +70,9 @@ input[type="checkbox"]:checked + .menuButton .mid {
   transform: translateX(-20px);
   opacity: 0;
 }
+
+
+
+
+
+

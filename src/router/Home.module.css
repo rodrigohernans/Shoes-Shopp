@@ -1,15 +1,38 @@
+.container {
+  overflow: hidden;
+}
+
 .imagen {
-    object-fit: scale-down;
-    width: 80%;
-    height: 400px;
-    
+  object-fit: scale-down;
+  width: 80%;
+  height: 400px;
 }
 
 .containerImg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel {
-    height: 30vh;
+  height: 30vh;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1em;
+  animation: left-rigth 0.7s ease-in-out;
+}
+
+@keyframes left-rigth {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.mujer {
+  text-align: start;
+  padding: 1em;
 }

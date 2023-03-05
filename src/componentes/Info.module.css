@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #f88643, #eb5c59, #e03570);
+  padding: 1em 0.1em 1em 0.1em;
+}
+
+.card {
+  width: 80%;
+  height: 180px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 2px 2px 2px #bebebe, -2px -2px 2px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card:hover {
+    background-color: whitesmoke;
+}
+
+p {
+  text-align: center;
+  margin-left: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+    padding: 1em;
+  }
+}
