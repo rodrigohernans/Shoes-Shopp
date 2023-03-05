@@ -10,6 +10,8 @@ import ZapatosDeMujer from "../componentes/ZapatosDeDama";
 import styles from "./Home.module.css";
 
 const Home = () => {
+ 
+
   return (
     <div className={styles.container}>
       <Nav />
@@ -20,7 +22,7 @@ const Home = () => {
       <Info />
       <h2 className={styles.mujer}>Zapatos Mujer</h2>
       <ZapatosDeMujer />
-      <h2 style={{ textAlign: "start", marginLeft: 20 }}>Zapatos Caballero</h2>
+      <h2 className={styles.mujer}>Zapatos Caballero</h2>
       <ZapatoDeCaballero />
     </div>
   );

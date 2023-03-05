@@ -1,14 +1,18 @@
 import styles from "./InfoNavBar.module.css";
 
-const infoDespliegue = ["Inicio", "Preguntas Frecuentes" , "Zapatos Dama" , "Zapatos Caballero", "Contacto"];
-
-export default function InfoNavBar() {
+const InfoNavBar = ({ scrollToAbout }) => {
   return (
     <div className={styles.container}>
-      {infoDespliegue.map((y) => (
-        <a href=""> {y} </a>
-      ))}
+      <a href="#">Inicio</a>
+      <a href="#">Preguntas Frecuentes</a>
+      <a href="#" onClick={scrollToAbout}>
+        Zapatos de Mujer
+      </a>
+      <a href="#">Zapato Caballero</a>
+      <a href="#">Contacto</a>
     </div>
   );
-}
+};
+
+export default InfoNavBar;
 
