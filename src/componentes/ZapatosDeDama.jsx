@@ -33,13 +33,12 @@ export default function ZapatoDeMujer() {
   ];
 
   return (
-    <Carousel 
-    responsive={responsive} 
+    <Carousel responsive={responsive} 
     className={styles.container} 
     id="mujer"
     swipeable={false}
     draggable={false}
-    showDots={true}
+    showDots={false}
     ssr={true} 
     infinite={true}
     autoPlay={true}
@@ -48,9 +47,8 @@ export default function ZapatoDeMujer() {
     customTransition="all .20"
     transitionDuration={1000}
     containerClass="carousel-container"
-    removeArrowOnDeviceType={["tablet", "mobile"]}
+    removeArrowOnDeviceType={false}
     dotListClass="custom-dot-list-style"
-    itemClass="carousel-item-padding-40-px"
     >
       {img.map((image, index) => (
         <div className={styles.card}>

@@ -36,7 +36,7 @@ export default function ZapatoDeCaballero() {
     <Carousel responsive={responsive} className={styles.container}
     swipeable={false}
     draggable={false}
-    showDots={true}
+    showDots={false}
     ssr={true} 
     infinite={true}
     autoPlay={true}
@@ -45,9 +45,8 @@ export default function ZapatoDeCaballero() {
     customTransition="all .20"
     transitionDuration={1000}
     containerClass="carousel-container"
-    removeArrowOnDeviceType={["tablet", "mobile"]}
+    removeArrowOnDeviceType={false}
     dotListClass="custom-dot-list-style"
-    itemClass="carousel-item-padding-40-px"
     >
       {img.map((image, index) => (
         <div className={styles.card}>
