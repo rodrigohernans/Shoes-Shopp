@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,4 +81,16 @@
   );
   color: white;
   transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 100px) {
+  .container {
+    height: 60vh;
+  }
 }

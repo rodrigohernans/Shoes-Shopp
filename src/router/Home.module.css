@@ -26,9 +26,11 @@ h2 {
 @keyframes left-rigth {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 

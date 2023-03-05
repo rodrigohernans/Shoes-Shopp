@@ -4,19 +4,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: rigth-left 0.4s ease-in-out;
+  animation: rigth-left 0.5s ease-in-out;
   height: 25vh;
   background: linear-gradient(to right, #f88643, #e03570 ) ;
-  border-radius: 1.2em ;
+  border-radius: 0 0 0.3em 0.3em;
   padding: 1em;
+  margin-top: 0.2em;
 }
 
 @keyframes rigth-left {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
