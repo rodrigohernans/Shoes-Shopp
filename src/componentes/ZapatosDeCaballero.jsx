@@ -33,27 +33,30 @@ export default function ZapatoDeCaballero() {
   ];
 
   return (
-    <Carousel responsive={responsive} className={styles.container}
-    swipeable={false}
-    draggable={false}
-    showDots={false}
-    ssr={true} 
-    infinite={true}
-    autoPlay={true}
-    autoPlaySpeed={2500}
-    keyBoardControl={true}
-    customTransition="all .20"
-    transitionDuration={1000}
-    containerClass="carousel-container"
-    removeArrowOnDeviceType={false}
-    dotListClass="custom-dot-list-style"
+    <Carousel
+      responsive={responsive}
+      className={styles.container}
+      id="mujer"
+      swipeable={false}
+      draggable={false}
+      showDots={true}
+      ssr={true}
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={2500}
+      keyBoardControl={true}
+      customTransition="all .20"
+      transitionDuration={1000}
+      containerClass="carousel-container"
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      dotListClass="custom-dot-list-style"
     >
       {img.map((image, index) => (
         <div className={styles.card}>
           <div key={index} className={styles.flipCard}>
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
-                <img src={image} alt="" />
+                <img src={image} alt="" className={styles.image} />
                 <p className={styles.title}>Más información</p>
               </div>
               <div className={styles.flipCardBack}>

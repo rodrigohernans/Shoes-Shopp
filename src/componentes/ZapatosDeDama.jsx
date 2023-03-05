@@ -38,7 +38,7 @@ export default function ZapatoDeMujer() {
     id="mujer"
     swipeable={false}
     draggable={false}
-    showDots={false}
+    showDots={true}
     ssr={true} 
     infinite={true}
     autoPlay={true}
@@ -47,7 +47,7 @@ export default function ZapatoDeMujer() {
     customTransition="all .20"
     transitionDuration={1000}
     containerClass="carousel-container"
-    removeArrowOnDeviceType={false}
+    removeArrowOnDeviceType={["tablet", "mobile"]}
     dotListClass="custom-dot-list-style"
     >
       {img.map((image, index) => (
@@ -55,7 +55,7 @@ export default function ZapatoDeMujer() {
           <div key={index} className={styles.flipCard}>
             <div className={styles.flipCardInner}>
               <div className={styles.flipCardFront}>
-                <img src={image} alt="" />
+                <img src={image} alt="" className={styles.image} />
                 <p className={styles.title}>Más información</p>
               </div>
               <div className={styles.flipCardBack}>

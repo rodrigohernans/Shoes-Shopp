@@ -9,9 +9,19 @@
 .card {
   display: flex;
   justify-content: center;
+  align-items: center;
+} 
+
+.image {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .flipCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 350px;
   perspective: 1000px;
@@ -64,8 +74,8 @@
 .flipCardBack {
   background: linear-gradient(
     120deg,
-    rgb(255, 174, 145) 30%,
-    coral 88%,
+    red 30%,
+    red 88%,
     bisque 40%,
     rgb(255, 185, 160) 78%
   );

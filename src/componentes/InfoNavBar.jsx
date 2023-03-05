@@ -10,8 +10,6 @@ const InfoNavBar = ({ scrollToAbout }) => {
       </a>
       <a href="#">Zapato Caballero</a>
       <a href="#">Contacto</a>
-      <a href="#">Contacto</a>
-      <a href="#">Contacto</a>
     </div>
   );
 };
